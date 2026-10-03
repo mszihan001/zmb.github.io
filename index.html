@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#073b35" />
+  <title>জিহান মৎস্য বীজাগার | উন্নতমানের মাছের রেনু পোনা</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="হোম">
+      <span class="brand-mark">🐟</span>
+      <span><strong>জিহান মৎস্য বীজাগার</strong><small>বিশ্বস্ততায়, মানসম্মত পোনায়</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="মেনু খুলুন">☰</button>
+    <nav class="main-nav" id="mainNav">
+      <a href="#home">⌂ হোম</a>
+      <a href="#products">পণ্যের বিস্তারিত</a>
+      <a href="#advice">চাষের পরামর্শ</a>
+      <a href="#memoSearch">মেমো সার্চ</a>
+      <label class="language-control" aria-label="ওয়েবসাইটের ভাষা"><span>ভাষা</span><select id="publicLanguage" aria-label="ওয়েবসাইটের ভাষা"><option value="bn">বাংলা</option><option value="en">English</option></select></label>
+      <button class="icon-button" id="adminOpen" title="অ্যাডমিন প্যানেল" aria-label="অ্যাডমিন প্যানেল">⚙</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-wrap" id="home">
+      <div class="hero-copy">
+        <span class="eyebrow"><span class="live-dot"></span> বগুড়ার বিশ্বস্ত মাছের পোনা সরবরাহকারী</span>
+        <h1 id="heroTitle">সুস্থ পোনা, সমৃদ্ধ মাছ চাষ</h1>
+        <p id="heroText">আপনার পুকুরের জন্য বেছে নিন উন্নতমানের ও সতেজ মাছের রেনু পোনা। মানসম্মত পোনা ও আন্তরিক পরামর্শে আমরা আছি আপনার পাশে।</p>
+        <div class="hero-actions"><a class="button button-primary" href="#products">পণ্য দেখুন <span>→</span></a><a class="button button-light" href="tel:+8801722736633">☎ এখনই ফোন করুন</a></div>
+        <div class="hero-note"><span>✓</span> যত্নসহকারে পোনা বাছাই <span>✓</span> চাষে অভিজ্ঞ পরামর্শ</div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-image-frame"><img id="heroImage" alt="পুকুরে মাছ" /></div>
+        <div class="image-caption"><span class="caption-icon">✦</span><span><strong>বিশ্বাসের সাথে চাষ করুন</strong><small>আপনার সাফল্যই আমাদের অঙ্গীকার</small></span></div>
+        <div class="float-badge">🐠 <span>নির্বাচিত<small>মানসম্মত পোনা</small></span></div>
+      </div>
+      <div class="hero-bottom-line"></div>
+    </section>
+
+    <section class="trust-strip section-wrap" aria-label="দোকানের তথ্য">
+      <div class="trust-item"><span class="trust-icon">📍</span><span><small>আমাদের ঠিকানা</small><strong>জগন্নাথপুর (হাজির বাজার), বগুড়া</strong></span></div>
+      <div class="trust-item"><span class="trust-icon">🐟</span><span><small>পণ্যের নিশ্চয়তা</small><strong>উন্নতমানের রেনু ও পোনা</strong></span></div>
+      <div class="trust-item"><span class="trust-icon">☎</span><span><small>ফোনে যোগাযোগ</small><strong>+880 1722-736633</strong></span></div>
+    </section>
+
+    <section class="advice-section section-wrap" id="advice">
+      <div class="advice-copy"><span class="section-kicker">আপনার পাশে আমরা</span><h2 id="adviceTitle">সঠিক পোনা বাছাই,<br />সফল চাষের প্রথম ধাপ</h2><p id="adviceText">পুকুরের আকার, পানির অবস্থা ও চাষের উদ্দেশ্য অনুযায়ী পোনা নির্বাচন করুন। পোনা ছাড়ার আগে পুকুর প্রস্তুত রাখুন এবং পরিবহনের পর ধীরে ধীরে পানির সঙ্গে মানিয়ে নিন। পরামর্শের জন্য আমাদের সাথে কথা বলুন।</p><a class="text-link" href="tel:+8801722736633">পরামর্শ নিন <span>↗</span></a></div>
+      <div class="gallery" id="heroGallery" aria-label="মৎস্য চাষের ছবি"></div>
+    </section>
+
+    <section class="products-section section-wrap" id="products">
+      <div class="section-heading"><div><span class="section-kicker">আমাদের পণ্য</span><h2>আপনার পুকুরের জন্য সেরা পোনা</h2></div><span class="product-count" id="productCount"></span></div>
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+
+    <section class="memo-search-section section-wrap" id="memoSearch">
+      <div class="search-copy"><span class="section-kicker">সহজে খুঁজে নিন</span><h2>আপনার মেমো দেখুন</h2><p>মেমোর ক্রমিক নম্বর লিখে পেমেন্টের অবস্থা দেখে নিন।</p></div>
+      <form class="memo-search-form" id="publicSearchForm"><label for="publicMemoId">মেমো নম্বর</label><div class="search-control"><input id="publicMemoId" placeholder="যেমন: 1001" required /><button class="button button-primary" type="submit">মেমো খুঁজুন <span>→</span></button></div><div id="publicMemoResult" class="search-result" aria-live="polite"></div></form>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="footer-main section-wrap"><div class="footer-brand"><span class="brand-mark">🐟</span><div><strong>জিহান মৎস্য বীজাগার</strong><p>বিশ্বস্ততায়, মানসম্মত পোনায়</p></div></div><div class="footer-detail"><span>ঠিকানা</span><p>জগন্নাথপুর (হাজির বাজার), মোকামতলা,<br />বগুড়া-৫৮১০</p></div><div class="footer-detail"><span>ফোন</span><p><a href="tel:+8801722736633">+8801722736633</a><br /><a href="tel:+8801711428073">+8801711428073</a></p></div><div class="footer-detail"><span>পরিচালক</span><p>মোঃ ময়নুল সাদিক (জোহা)</p></div></div><div class="footer-bottom">© <span id="year"></span> জিহান মৎস্য বীজাগার <span>ইনশাল্লাহ আবার আসবেন</span></div></footer>
+
+  <div class="modal-backdrop" id="adminModal" aria-hidden="true">
+    <section class="admin-modal" role="dialog" aria-modal="true" aria-labelledby="adminModalTitle">
+      <button class="modal-close" id="adminClose" aria-label="বন্ধ করুন">×</button>
+      <div id="loginView" class="login-view"><div class="login-mark">🐟</div><span class="section-kicker">নিরাপদ প্রবেশ</span><h2 id="adminModalTitle">অ্যাডমিন প্যানেল</h2><p>আপনার অ্যাকাউন্ট দিয়ে প্রবেশ করুন</p><form id="loginForm"><label for="loginUser">ইউজার আইডি</label><input id="loginUser" autocomplete="username" required /><label for="loginPass">পাসওয়ার্ড</label><input id="loginPass" type="password" autocomplete="current-password" required /><button class="button button-primary full-button" type="submit">লগইন করুন <span>→</span></button><div class="form-message" id="loginMessage"></div></form></div>
+      <div id="adminView" class="admin-view hidden"><div class="admin-top"><div><span class="section-kicker">ব্যবস্থাপনা</span><h2>অ্যাডমিন কন্ট্রোল</h2><p>স্বাগতম, <strong id="loggedAdmin"></strong></p></div><div class="admin-tools"><label class="language-control admin-language-control" aria-label="অ্যাডমিন প্যানেলের ভাষা"><span>অ্যাডমিনের ভাষা</span><select id="adminLanguage" aria-label="অ্যাডমিন প্যানেলের ভাষা"><option value="bn">বাংলা</option><option value="en">English</option></select></label><button class="button button-outline" id="logoutButton">লগআউট</button></div></div>
+        <div class="admin-tabs" role="tablist"><button class="admin-tab active" data-panel="memoAdmin">মেমো তৈরি</button><button class="admin-tab" data-panel="memosAdmin">মেমো সমূহ</button><button class="admin-tab" data-panel="dueCustomersAdmin">অপরিশোধ গ্রাহক</button><button class="admin-tab" data-panel="productsAdmin">পণ্য নিয়ন্ত্রণ</button><button class="admin-tab" data-panel="adminsAdmin">অ্যাডমিন নিয়ন্ত্রণ</button><button class="admin-tab" data-panel="adminReportsAdmin">অ্যাডমিন কাজের হিসাব</button><button class="admin-tab" data-panel="siteAdmin">সাইট সেটিংস</button><button class="admin-tab" data-panel="customerInfoAdmin">গ্রাহকের তথ্য</button></div>
+        <section class="admin-panel" id="productsAdmin"><div class="panel-heading"><div><h3>প্রোডাক্ট ডিটেলস কন্ট্রোল</h3><p>পণ্য যোগ, সম্পাদনা ও মুছে ফেলুন</p></div><button class="button button-primary" id="newProductButton">＋ নতুন পণ্য</button></div><form id="productForm" class="editor-form hidden"><h4 id="productFormTitle">নতুন পণ্য যোগ</h4><input type="hidden" id="productId" /><div class="form-grid"><label>পণ্যের নাম<input id="productName" required /></label><label>দর (টাকা/কেজি)<input id="productPrice" type="number" min="0" step="0.01" required /></label><label>ছবির লিংক<input id="productImage" type="url" placeholder="https://..." /></label><label>অথবা ছবি আপলোড<input id="productImageFile" type="file" accept="image/*" /></label><label>ছোট বিবরণ<input id="productDescription" /></label></div><div class="form-actions"><button type="submit" class="button button-primary">সংরক্ষণ করুন</button><button type="button" class="button button-outline" id="cancelProduct">বাতিল</button></div></form><div id="adminProductList" class="admin-list"></div></section>
+        <section class="admin-panel active" id="memoAdmin"><div class="panel-heading"><div><h3>নতুন মেমো তৈরি</h3><p>পণ্য নির্বাচন করুন, পরিমাণ ও মূল্য স্বয়ংক্রিয়ভাবে হিসাব হবে</p></div><span class="memo-number-chip">পরবর্তী মেমো: <b id="nextMemoId"></b></span></div><div class="memo-builder"><div class="memo-form-area"><div class="form-grid"><label>কাস্টমারের ফোন<input id="customerPhone" type="tel" placeholder="01XXXXXXXXX" /></label><label>কাস্টমারের নাম<input id="customerName" /></label><label class="wide-field">কাস্টমারের ঠিকানা<input id="customerAddress" /></label><label class="wide-field">মেমো ক্রমিক নম্বর<span class="memo-field-number"><b id="memoNumberDisplay"></b></span></label></div><div class="memo-product-picker"><h4>পণ্য নির্বাচন</h4><div class="product-pick-list" id="memoProductPicker"></div></div></div><aside class="memo-summary"><div class="selected-memo-items" id="selectedMemoItems"><div class="empty-state">এখনো কোনো পণ্য যোগ করা হয়নি।</div></div><h4>মেমোর হিসাব</h4><label>পেমেন্টের অবস্থা<select id="paymentStatus"><option value="paid">পরিশোধ</option><option value="due">বাকি</option></select></label><label>অগ্রিম জমা (টাকা)<input id="advanceAmount" type="number" value="" min="0" step="0.01" placeholder="নিজে লিখুন" /></label><label>ডিসকাউন্ট (টাকা)<input id="discountAmount" type="number" value="0" min="0" step="0.01" /></label><div class="summary-row"><span>মোট</span><strong id="memoSubtotal">৳০.০০</strong></div><div class="summary-row"><span>বাকি</span><strong id="memoDue">৳০.০০</strong></div><button type="button" class="button button-primary full-button" id="createMemoButton">মেমো তৈরি করুন</button><div class="memo-save-status" id="memoSaveStatus" aria-live="polite"></div><button type="button" class="button button-outline full-button memo-save-button" id="saveMemoButton" disabled>🖨 মেমো প্রিন্ট করুন</button><div class="memo-preview hidden" id="memoPreview" aria-live="polite"></div></aside></div></section>
+        <section class="admin-panel" id="memosAdmin"><div class="panel-heading"><div><h3>মেমো সার্চ ও ব্যবস্থাপনা</h3><p>মেমো নম্বর দিয়ে খুঁজুন, বাকি টাকা জমা নিন বা তথ্য আপডেট করুন</p></div></div><form class="admin-search-row" id="adminSearchForm"><input id="adminMemoSearch" placeholder="মেমো নম্বর লিখুন" required /><button class="button button-primary">মেমো খুঁজুন</button></form><div id="adminMemoResult" class="admin-memo-result"></div><div class="all-memos-list" id="allMemosList"></div></section>
+        <section class="admin-panel" id="adminsAdmin"><div class="panel-heading"><div><h3>অ্যাডমিন নিয়ন্ত্রণ</h3><p>নতুন অ্যাডমিন অ্যাকাউন্ট তৈরি ও পাসওয়ার্ড পরিবর্তন</p></div></div><form id="adminCreateForm" class="editor-form"><h4>নতুন অ্যাডমিন যোগ করুন</h4><div class="form-grid"><label>অ্যাডমিনের নাম<input id="newAdminName" required /></label><label>ইউজার আইডি<input id="newAdminUser" required /></label><label>পাসওয়ার্ড<input id="newAdminPass" type="password" required /></label></div><fieldset class="permission-picker"><legend>অ্যাডমিন প্যানেলের অ্যাক্সেস নির্বাচন করুন</legend><label><input type="checkbox" name="adminPermission" value="memoAdmin" /> মেমো তৈরি</label><label><input type="checkbox" name="adminPermission" value="memosAdmin" /> মেমো সমূহ</label><label><input type="checkbox" name="adminPermission" value="dueCustomersAdmin" /> অপরিশোধ গ্রাহক</label><label><input type="checkbox" name="adminPermission" value="payMemos" /> মেমো পরিশোধের অনুমতি</label><label><input type="checkbox" name="adminPermission" value="productsAdmin" /> পণ্য নিয়ন্ত্রণ</label><label><input type="checkbox" name="adminPermission" value="adminsAdmin" /> অ্যাডমিন নিয়ন্ত্রণ</label><label><input type="checkbox" name="adminPermission" value="siteAdmin" /> সাইট সেটিংস</label><label><input type="checkbox" name="adminPermission" value="customerInfoAdmin" /> গ্রাহকের তথ্য</label></fieldset><button class="button button-primary" type="submit">অ্যাডমিন যুক্ত করুন</button></form><div class="admin-list" id="adminAccountsList"></div></section>
+        <section class="admin-panel" id="adminReportsAdmin"><div class="panel-heading"><div><h3>অ্যাডমিন কাজের হিসাব</h3><p>প্রতিটি অ্যাডমিনের তৈরি মেমো ও গ্রহণ করা পেমেন্টের বিস্তারিত</p></div></div><div id="adminWorkReport" class="admin-work-report"></div></section>
+        <section class="admin-panel" id="dueCustomersAdmin"><div class="panel-heading"><div><h3>অপরিশোধ গ্রাহকদের তালিকা</h3><p>যেসব মেমোতে বাকি আছে, সেসব গ্রাহকের যোগাযোগের তথ্য দেখুন</p></div><button type="button" class="button button-primary" id="dueCustomersPrintButton">🖨 A4 প্রিন্ট</button></div><div id="dueCustomersPrintArea" class="due-customers-print-area"></div></section>
+        <section class="admin-panel" id="customerInfoAdmin"><div class="panel-heading"><div><h3>গ্রাহকের তথ্য</h3><p>গ্রাহকের তথ্য ও সংশ্লিষ্ট মেমো শুধু দেখা যাবে; সম্পাদনা বা মুছে ফেলার অপশন নেই।</p></div></div><div class="customer-info-layout"><div id="customerInfoList" class="admin-list"></div><div id="customerInfoDetail" class="customer-info-detail"><div class="empty-state">বিস্তারিত দেখতে গ্রাহক নির্বাচন করুন।</div></div></div></section>
+        <section class="admin-panel" id="siteAdmin"><div class="panel-heading"><div><h3>হোমপেজ ও গ্যালারি সেটিংস</h3><p>হিরো ছবির জন্য ১–৭টি স্লাইড ছবি URL বা আপলোড করুন; প্রতি ৩ সেকেন্ডে ছবি বদলাবে।</p></div></div><form id="siteSettingsForm" class="editor-form"><div class="form-grid"><label>ওয়েবসাইটের ডিফল্ট ভাষা<select id="siteDefaultLanguage"><option value="bn">বাংলা</option><option value="en">English</option></select></label><label class="wide-field">হিরো শিরোনাম<input id="settingHeroTitle" required /></label><label class="wide-field">হিরো লেখা<textarea id="settingHeroText" rows="3"></textarea></label><label>হিরো স্লাইড ছবি ১-এর লিংক<input id="settingHeroImage" type="url" /></label><label>স্লাইড ছবি ১ আপলোড<input id="settingHeroImageFile" type="file" accept="image/*" /></label><label>স্লাইড ছবি ২-এর লিংক<input id="heroSlideUrl2" type="url" /><input id="heroSlideFile2" type="file" accept="image/*" aria-label="স্লাইড ছবি ২ আপলোড" /></label><label>স্লাইড ছবি ৩-এর লিংক<input id="heroSlideUrl3" type="url" /><input id="heroSlideFile3" type="file" accept="image/*" aria-label="স্লাইড ছবি ৩ আপলোড" /></label><label>স্লাইড ছবি ৪-এর লিংক<input id="heroSlideUrl4" type="url" /><input id="heroSlideFile4" type="file" accept="image/*" aria-label="স্লাইড ছবি ৪ আপলোড" /></label><label>স্লাইড ছবি ৫-এর লিংক<input id="heroSlideUrl5" type="url" /><input id="heroSlideFile5" type="file" accept="image/*" aria-label="স্লাইড ছবি ৫ আপলোড" /></label><label>স্লাইড ছবি ৬-এর লিংক<input id="heroSlideUrl6" type="url" /><input id="heroSlideFile6" type="file" accept="image/*" aria-label="স্লাইড ছবি ৬ আপলোড" /></label><label>স্লাইড ছবি ৭-এর লিংক<input id="heroSlideUrl7" type="url" /><input id="heroSlideFile7" type="file" accept="image/*" aria-label="স্লাইড ছবি ৭ আপলোড" /></label><label>পরামর্শ শিরোনাম<input id="settingAdviceTitle" /></label><label class="wide-field">পরামর্শের লেখা<textarea id="settingAdviceText" rows="3"></textarea></label><label>গ্যালারি ছবির লিংক ১<input id="galleryImage1" type="url" /><input id="galleryFile1" type="file" accept="image/*" aria-label="গ্যালারি ছবি ১ আপলোড" /></label><label>গ্যালারি ছবির লিংক ২<input id="galleryImage2" type="url" /><input id="galleryFile2" type="file" accept="image/*" aria-label="গ্যালারি ছবি ২ আপলোড" /></label><label>গ্যালারি ছবির লিংক ৩<input id="galleryImage3" type="url" /><input id="galleryFile3" type="file" accept="image/*" aria-label="গ্যালারি ছবি ৩ আপলোড" /></label></div><h4 class="wide-field">ওয়েবসাইটের লেখা</h4><div id="publicCopyEditor" class="form-grid wide-field"></div><button class="button button-primary" type="submit">সাইট আপডেট করুন</button></form></section>
+      </div>
+    </section>
+  </div>
+  <div class="dialog-backdrop" id="actionDialog" aria-hidden="true">
+    <section class="action-dialog" role="dialog" aria-modal="true" aria-labelledby="actionDialogTitle">
+      <div class="action-dialog-icon" aria-hidden="true">✦</div>
+      <h2 id="actionDialogTitle"></h2>
+      <p id="actionDialogMessage"></p>
+      <form id="actionDialogForm">
+        <div id="actionDialogFields"></div>
+        <div class="action-dialog-actions">
+          <button class="button button-outline" type="button" id="actionDialogCancel">বাতিল</button>
+          <button class="button button-primary" type="submit" id="actionDialogSubmit">নিশ্চিত করুন</button>
+        </div>
+      </form>
+    </section>
+  </div>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js"></script>
+  <script src="firebase-config.js"></script>
+  <script src="script.js"></script>
+  <script>
+    const directorFullName = 'মোঃ ময়নুল সাদিক (জোহা)';
+    function highlightDirectorName() {
+      document.querySelectorAll('.print-director').forEach(element => {
+        if (element.querySelector('.director-name')) return;
+        const walker = document.createTreeWalker(element, NodeFilter.SHOW_TEXT);
+        let textNode;
+        while ((textNode = walker.nextNode())) {
+          const start = textNode.nodeValue.indexOf(directorFullName);
+          if (start < 0) continue;
+          const label = 'পরিচালক ';
+          const phraseStart = start >= label.length && textNode.nodeValue.slice(start - label.length, start) === label ? start - label.length : start;
+          const fragment = document.createDocumentFragment();
+          if (phraseStart) fragment.append(textNode.nodeValue.slice(0, phraseStart));
+          const name = document.createElement('span');
+          name.className = 'director-name';
+          name.textContent = textNode.nodeValue.slice(phraseStart, start + directorFullName.length);
+          fragment.append(name, textNode.nodeValue.slice(start + directorFullName.length));
+          textNode.replaceWith(fragment);
+          break;
+        }
+      });
+    }
+    new MutationObserver(highlightDirectorName).observe(document.body, { childList: true, subtree: true });
+    highlightDirectorName();
+  </script>
+</body>
+</html>
